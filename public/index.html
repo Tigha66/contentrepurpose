@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ContentRepurposeAI - Content Repurposing Engine</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .glass{background:rgba(255,255,255,0.05);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.1)}
+    .gradient-text{background:linear-gradient(135deg,#ec4899,#f97316);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+  </style>
+</head>
+<body class="bg-[#0a0a0f] min-h-screen text-white">
+  <header class="glass sticky top-0">
+    <div class="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-pink-500 to-orange-500 flex items-center justify-center shadow-lg">
+          <i class="fas fa-retweet text-2xl"></i>
+        </div>
+        <div><h1 class="text-2xl font-bold gradient-text">ContentRepurposeAI</h1><p class="text-xs text-slate-400">One content → many outputs</p></div>
+      </div>
+    </div>
+  </header>
+  <main class="max-w-7xl mx-auto px-8 py-10">
+    <div class="grid grid-cols-4 gap-6 mb-10">
+      <div class="glass rounded-2xl p-6"><p class="text-slate-400 text-sm mb-2">Repurposed</p><p class="text-4xl font-bold">89</p></div>
+      <div class="glass rounded-2xl p-6"><p class="text-slate-400 text-sm mb-2">Twitter Threads</p><p class="text-4xl font-bold text-pink-400">234</p></div>
+      <div class="glass rounded-2xl p-6"><p class="text-slate-400 text-sm mb-2">LinkedIn Posts</p><p class="text-4xl font-bold text-blue-400">156</p></div>
+      <div class="glass rounded-2xl p-6"><p class="text-slate-400 text-sm mb-2">Time Saved</p><p class="text-4xl font-bold">12h</p></div>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-8">
+      <div class="glass rounded-2xl p-8">
+        <h2 class="text-xl font-bold mb-6"><i class="fas fa-paste text-pink-400 mr-3"></i>Input Content</h2>
+        <textarea placeholder="Paste blog post, video transcript, or podcast notes..." class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-white placeholder-slate-500 h-48"></textarea>
+        <button class="w-full mt-4 py-4 bg-gradient-to-r from-pink-500 to-orange-500 rounded-xl font-semibold">
+          <i class="fas fa-magic mr-2"></i>Repurpose Content
+        </button>
+      </div>
+      <div class="glass rounded-2xl p-8">
+        <h2 class="text-xl font-bold mb-6"><i class="fas fa-share-alt text-orange-400 mr-3"></i>Generated Outputs</h2>
+        <div class="space-y-3">
+          <div class="bg-white/5 rounded-xl p-4">
+            <div class="flex items-center gap-2 mb-2"><i class="fab fa-twitter text-pink-400"></i><span class="font-semibold">Twitter Thread</span></div>
+            <p class="text-slate-400 text-sm line-clamp-2">🧵 10 insights from our latest blog post on AI automation...</p>
+          </div>
+          <div class="bg-white/5 rounded-xl p-4">
+            <div class="flex items-center gap-2 mb-2"><i class="fab fa-linkedin text-blue-400"></i><span class="font-semibold">LinkedIn Post</span></div>
+            <p class="text-slate-400 text-sm line-clamp-2">Excited to share our latest research on content automation...</p>
+          </div>
+          <div class="bg-white/5 rounded-xl p-4">
+            <div class="flex items-center gap-2 mb-2"><i class="fas fa-envelope text-green-400"></i><span class="font-semibold">Newsletter</span></div>
+            <p class="text-slate-400 text-sm line-clamp-2">This week in content: AI tools, automation tips, and more...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
